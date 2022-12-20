@@ -1,0 +1,60 @@
+/* CANVAS */
+    
+#canvasContainer
+    position: absolute
+    top: 0
+    width: 100vw
+    height: 100vh
+    max-width: 100%
+
+    z-index: 5
+
+    overflow: hidden
+    
+    background: white
+
+#canvasAnimation
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    
+.introAssist
+    position: absolute
+    top: 50%
+    left: 50%
+    color: white
+    transform: translate(-50%, -50%)
+    white-space: nowrap
+    font-weight: 200
+    display: flex
+    flex-direction: column
+    align-items: center
+    pointer-events: none
+
+.introSkip
+    position: absolute
+    bottom: 5%
+    right: 5%
+    color: white
+    background: none
+    border: none
+
+#canvasContainer,
+.introAssist,
+.introSkip
+    transition: opacity ease 1s
+    &.remove
+        opacity: 0
+
+.cloud-video-container
+    width: 100%
+    height: 100%
+    z-index: -1
+
+.cloud-video
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+    

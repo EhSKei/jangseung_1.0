@@ -1,0 +1,87 @@
+// HERO
+
+.hero
+    width: 100vw
+    height: auto
+    max-width: 100%
+    max-height: 100%
+
+    display: grid
+    place-items: center
+
+    background-color: rgba(0,0,0,0.5)
+    background-blend-mode: multiply
+    background-size: cover
+    background-position: center
+
+    padding-inline: 2.5ch
+    padding-top: 10ch
+    padding-bottom: 2.5ch
+
+    @include media-breakpoint-up(md)
+        height: 100vh
+        padding-inline: 5ch
+        padding-block: 0
+
+.hero-text
+    width: 100%
+    max-width: 1024px
+    margin: auto
+
+    display: grid
+    gap: 2ch
+    align-items: center
+    grid-template: 1fr / 1fr
+
+    @include media-breakpoint-up(lg)
+        grid-template: 1fr / 1fr 1fr
+
+.hero-header
+    @extend .header
+
+.hero-title
+    @extend .title
+
+.hero-desc
+    @extend .desc
+
+.hero-mobile
+    padding: 2ch
+
+// SUB-HERO
+.sub-hero
+    width: 100%
+    height: 100%
+    max-width: 1024px
+    margin: auto
+    display: grid
+    grid-template: repeat(2,auto) / 1fr
+    place-items: center
+
+    column-gap: 5ch
+    row-gap: 2.5ch
+    
+    padding-block: 50px
+    padding-inline: 2ch
+
+    @include media-breakpoint-up(md)
+        padding-block: 100px
+        padding-inline: 5ch
+    @include media-breakpoint-up(lg)
+        grid-template: 1fr / repeat(2,auto)
+
+.sub-hero-text
+    @extend .hero-text
+    display: grid
+    grid-template-columns: 1fr
+    gap: 0
+
+.sub-hero-header
+    @extend .title
+    font-weight: 700
+
+.sub-hero-title
+    @extend .subtitle
+
+.sub-hero-desc
+    @extend .desc

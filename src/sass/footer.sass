@@ -1,0 +1,87 @@
+.footer-swiper
+
+    background-color: rgba(0,0,0,0.9)
+
+    .swiper-wrapper
+
+        padding-block: 50px
+
+    .swiper-slide
+
+        display: flex
+        justify-content: center
+        width: 250px
+        height: 350px
+
+    .swiper-scrollbar
+
+        background-color: rgba(255,255,255,0.25)
+
+    .swiper-scrollbar-drag
+
+        background-color: rgba(255,255,255,0.75)
+        transition: all ease 0.25s !important
+
+.footer-item
+    
+    width: inherit
+    height: inherit
+    padding: 20px
+    
+    color: white
+    border: 1px solid rgba(255,255,255,0.25)
+
+    transform: translateY(0)
+
+    transition: all ease 0.5s
+
+    &.active
+
+        background-color: rgba(43,44 ,170 ,0.75 )
+        color: white
+    
+    &:hover
+
+        background-color: white
+        color: black
+
+        transform: translateY(-25px)
+        
+
+
+.footer-item-link
+
+    width: 100%
+    height: 100%
+
+    color: inherit
+    text-decoration: none
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    transition: all ease 0.25s
+
+    &:hover
+
+        color: inherit
+
+
+.footer-item-title,
+.footer-item-desc
+
+    display: block
+
+.footer-item-title
+
+    font-weight: 700
+    font-size: 1.25rem
+
+.footer-item-subtitle
+
+    font-weight: 400
+    font-size: 1rem
+
+.footer-item-separator
+    margin-block: 10px
